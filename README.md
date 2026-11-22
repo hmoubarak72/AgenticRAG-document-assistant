@@ -306,7 +306,7 @@ pull request with a clear description and passing tests.
 
 ## License
 
-MIT © 2026 Hesham Moubarak. See [LICENSE](LICENSE).
+© 2026 Hesham Moubarak. See [LICENSE](LICENSE).
 
 ## Acknowledgements
 
