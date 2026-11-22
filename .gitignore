@@ -1,0 +1,15 @@
+.env
+.venv/
+venv*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+data/
+documents/*
+!documents/sample-refund-policy.md
+!documents/sample-support-plans.csv
+eval/last_report.json
+*.mkv
+*.mp4
+.DS_Store

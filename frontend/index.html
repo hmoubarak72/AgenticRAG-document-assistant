@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AgenticRAG-document-assistant · Agentic RAG Document Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+  <script src="/static/vendor/marked.min.js" defer></script>
+  <script src="/static/vendor/purify.min.js" defer></script>
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+<div class="app">
+  <!-- ============ Sidebar ============ -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">A</div>
+      <div><div class="brand-name">AgenticRAG</div><div class="brand-sub">document-assistant</div></div>
+    </div>
+    <button class="btn-new" id="newChat"><span>+</span> New conversation</button>
+
+    <div class="side-label">Workspace</div>
+    <nav class="side-nav">
+      <a class="side-item active"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h10"/></svg>Document assistant</a>
+    </nav>
+
+    <div class="side-label">Recent activity</div>
+    <ul class="recent" id="recentList"><li class="muted small">No conversations yet</li></ul>
+
+    <div class="side-bottom">
+      <div class="ws-card">
+        <div class="ws-icon">✦</div>
+        <div><div class="ws-title">Agentic RAG workspace</div><div class="ws-sub">Plan. Retrieve. Verify. Cite.</div></div>
+      </div>
+      <div class="user">
+        <div class="avatar">A</div>
+        <div class="user-meta"><div class="user-name">Personal workspace</div><div class="user-sub" id="modeLabel">Private session</div></div>
+        <span class="status-dot" id="statusDot" title="Backend status"></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============ Main ============ -->
+  <main class="main">
+    <div class="scroll" id="scroll">
+      <section class="hero" id="hero">
+        <div class="eyebrow">✦ Agentic RAG document assistant</div>
+        <h1>Grounded answers,<br /><span class="grad">cited from your documents.</span></h1>
+        <p class="lead">Upload your files and ask any question about them. The agent plans each request, searches your documents when they can answer it, checks the evidence, and cites its sources.</p>
+        <div class="suggestions">
+          <button class="sugg" data-prompt="Summarize the uploaded documents and list the key points.">
+            <div class="sugg-title">✧ Summarize documents</div><div class="sugg-sub">Get the important points at a glance</div><span class="arrow">↗</span>
+          </button>
+          <button class="sugg" data-prompt="What does Section 4.2 of the uploaded policy say about refunds?">
+            <div class="sugg-title">⌕ Find key information</div><div class="sugg-sub">Pull out facts, figures, and details</div><span class="arrow">↗</span>
+          </button>
+          <button class="sugg" data-prompt="Compare the uploaded files and highlight similarities and differences.">
+            <div class="sugg-title">⇄ Compare files</div><div class="sugg-sub">Spot similarities and differences</div><span class="arrow">↗</span>
+          </button>
+        </div>
+      </section>
+      <section class="thread" id="thread"></section>
+    </div>
+
+    <div class="composer-wrap">
+      <div class="upload-status" id="uploadStatus" hidden></div>
+      <form class="composer" id="composer">
+        <textarea id="input" rows="1" placeholder="Ask any question about your documents…" autocomplete="off"></textarea>
+        <div class="composer-row">
+          <label class="add-files">+ Add files <span class="muted">PDF, DOCX, XLSX, PPTX &amp; more</span>
+            <input type="file" id="fileInputInline" multiple hidden />
+          </label>
+          <div class="composer-right">
+            <span class="scope-pill" id="scopePill" hidden></span>
+            <button class="send" id="sendBtn" type="submit" aria-label="Send">↑</button>
+          </div>
+        </div>
+      </form>
+      <div class="disclaimer">AgenticRAG-document-assistant can make mistakes. Check important information against your original documents.</div>
+    </div>
+  </main>
+
+  <!-- ============ Library ============ -->
+  <aside class="library">
+    <div class="lib-head"><h2>Library</h2><span class="count" id="docCount">0</span></div>
+
+    <label class="dropzone" id="dropzone">
+      <input type="file" id="fileInput" multiple hidden />
+      <div class="dz-icon">↑</div>
+      <div class="dz-title">Drop files to upload</div>
+      <div class="dz-sub">or <u>browse files</u></div>
+      <div class="dz-limit" id="dzLimit">Up to 30 MB per file</div>
+    </label>
+
+    <div class="lib-label"><span>Uploaded files</span><span id="fileCountLabel">0 files</span></div>
+    <ul class="files" id="fileList"></ul>
+    <p class="hint">Click a file to limit answers to it. Click again to include all files.</p>
+
+    <div class="formats">
+      <div class="formats-title">✦ Supported formats</div>
+      <div class="chips" id="formatChips"></div>
+      <p class="hint">Upload multiple files and ask questions across your library.</p>
+    </div>
+  </aside>
+</div>
+</body>
+</html>

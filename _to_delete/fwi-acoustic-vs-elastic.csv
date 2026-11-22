@@ -1,0 +1,11 @@
+Aspect,Acoustic FWI,Elastic FWI
+Wave equation,Acoustic (pressure only),Elastic (P and S waves)
+Parameters inverted,Vp and sometimes density,"Vp, Vs and density (or impedances / Lame parameters)"
+P-to-S mode conversions,Not modeled,Modeled
+Surface waves (Rayleigh / Scholte),Not modeled,Modeled
+AVO amplitude behavior,Approximate,Correct angle-dependent amplitudes
+Grid spacing set by,Lowest P-wave velocity,Lowest S-wave velocity
+Relative compute cost,Lower,Higher; grows sharply with low near-surface Vs
+Typical data,Marine streamer over soft or moderate seabed,"Land, ocean-bottom node or cable, multicomponent, hard seabed"
+Main risk,Elastic effects bias the Vp model,"Crosstalk between parameters, cycle skipping, cost"
+Typical use,Vp model building for imaging,"Near-surface Vs, lithology and fluid discrimination"

@@ -1,0 +1,16 @@
+@echo off
+REM One-click local start for Windows
+cd /d "%~dp0"
+if not exist .venv (
+  echo Creating virtual environment...
+  python -m venv .venv
+  call .venv\Scripts\activate.bat
+  python -m pip install --upgrade pip
+  pip install -r requirements.txt
+) else (
+  call .venv\Scripts\activate.bat
+)
+if not exist .env copy .env.example .env >nul
+echo Starting AgenticRAG-document-assistant at http://127.0.0.1:8000
+start "" http://127.0.0.1:8000
+python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000

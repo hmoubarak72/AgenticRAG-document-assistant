@@ -1,0 +1,19 @@
+[project]
+name = "agenticrag-document-assistant"
+version = "1.0.0"
+description = "AgenticRAG-document-assistant: an agentic RAG document assistant built with LangGraph, FastAPI, Groq and Qdrant"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Hesham Moubarak" }]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["B008"]  # FastAPI's File(...) default is idiomatic

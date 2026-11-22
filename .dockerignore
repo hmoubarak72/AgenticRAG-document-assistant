@@ -1,0 +1,11 @@
+.env
+.venv
+venv*
+__pycache__
+.pytest_cache
+data
+*.mkv
+*.mp4
+*.docx
+docs/assets
+.git

@@ -1,0 +1,173 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "expected": "DIRECT_ANSWER",
+    "got": "DIRECT_ANSWER",
+    "correct": true,
+    "evidence_hit": null,
+    "attempts": 0,
+    "seconds": 0.0
+  },
+  {
+    "question": "Hello! How are you?",
+    "expected": "DIRECT_ANSWER",
+    "got": "DIRECT_ANSWER",
+    "correct": true,
+    "evidence_hit": null,
+    "attempts": 0,
+    "seconds": 0.0
+  },
+  {
+    "question": "Explain what a vector database is in two sentences.",
+    "expected": "DIRECT_ANSWER",
+    "got": "DIRECT_ANSWER",
+    "correct": true,
+    "evidence_hit": null,
+    "attempts": 0,
+    "seconds": 0.0
+  },
+  {
+    "question": "What is the difference between precision and recall?",
+    "expected": "DIRECT_ANSWER",
+    "got": "DIRECT_ANSWER",
+    "correct": true,
+    "evidence_hit": null,
+    "attempts": 0,
+    "seconds": 0.0
+  },
+  {
+    "question": "Give a one-line definition of machine learning.",
+    "expected": "DIRECT_ANSWER",
+    "got": "DIRECT_ANSWER",
+    "correct": true,
+    "evidence_hit": null,
+    "attempts": 0,
+    "seconds": 0.0
+  },
+  {
+    "question": "Thanks, that helps.",
+    "expected": "DIRECT_ANSWER",
+    "got": "DIRECT_ANSWER",
+    "correct": true,
+    "evidence_hit": null,
+    "attempts": 0,
+    "seconds": 0.0
+  },
+  {
+    "question": "What does Section 4.2 of the uploaded policy say about refunds?",
+    "expected": "RAG_RETRIEVAL",
+    "got": "RAG_RETRIEVAL",
+    "correct": true,
+    "evidence_hit": true,
+    "attempts": 1,
+    "seconds": 0.0
+  },
+  {
+    "question": "According to the policy, how long does express shipping take?",
+    "expected": "RAG_RETRIEVAL",
+    "got": "RAG_RETRIEVAL",
+    "correct": true,
+    "evidence_hit": true,
+    "attempts": 2,
+    "seconds": 0.0
+  },
+  {
+    "question": "Summarize the uploaded document.",
+    "expected": "RAG_RETRIEVAL",
+    "got": "RAG_RETRIEVAL",
+    "correct": true,
+    "evidence_hit": null,
+    "attempts": 1,
+    "seconds": 0.0
+  },
+  {
+    "question": "Who is responsible for deleting marketing data according to the document?",
+    "expected": "RAG_RETRIEVAL",
+    "got": "RAG_RETRIEVAL",
+    "correct": true,
+    "evidence_hit": true,
+    "attempts": 1,
+    "seconds": 0.0
+  },
+  {
+    "question": "Can Final Sale items be returned under our policy?",
+    "expected": "RAG_RETRIEVAL",
+    "got": "RAG_RETRIEVAL",
+    "correct": true,
+    "evidence_hit": true,
+    "attempts": 1,
+    "seconds": 0.0
+  },
+  {
+    "question": "What warranty does the policy give on outdoor equipment?",
+    "expected": "RAG_RETRIEVAL",
+    "got": "RAG_RETRIEVAL",
+    "correct": true,
+    "evidence_hit": true,
+    "attempts": 1,
+    "seconds": 0.0
+  },
+  {
+    "question": "How long are order records retained per the document?",
+    "expected": "RAG_RETRIEVAL",
+    "got": "RAG_RETRIEVAL",
+    "correct": true,
+    "evidence_hit": true,
+    "attempts": 1,
+    "seconds": 0.0
+  },
+  {
+    "question": "Compare the shipping and refund sections of the policy.",
+    "expected": "RAG_RETRIEVAL",
+    "got": "RAG_RETRIEVAL",
+    "correct": true,
+    "evidence_hit": null,
+    "attempts": 1,
+    "seconds": 0.0
+  },
+  {
+    "question": "what about it?",
+    "expected": "CLARIFICATION",
+    "got": "CLARIFICATION",
+    "correct": true,
+    "evidence_hit": null,
+    "attempts": 0,
+    "seconds": 0.0
+  },
+  {
+    "question": "explain it",
+    "expected": "CLARIFICATION",
+    "got": "CLARIFICATION",
+    "correct": true,
+    "evidence_hit": null,
+    "attempts": 0,
+    "seconds": 0.0
+  },
+  {
+    "question": "What is Snell's law?",
+    "expected": "DIRECT_ANSWER",
+    "got": "DIRECT_ANSWER",
+    "correct": true,
+    "evidence_hit": null,
+    "attempts": 0,
+    "seconds": 0.0
+  },
+  {
+    "question": "How does elastic FWI differ from acoustic FWI, and when is the extra cost justified?",
+    "expected": "RAG_RETRIEVAL",
+    "got": "RAG_RETRIEVAL",
+    "correct": true,
+    "evidence_hit": true,
+    "attempts": 1,
+    "seconds": 0.0
+  },
+  {
+    "question": "According to the technical note, when is acoustic FWI usually sufficient?",
+    "expected": "RAG_RETRIEVAL",
+    "got": "RAG_RETRIEVAL",
+    "correct": true,
+    "evidence_hit": true,
+    "attempts": 1,
+    "seconds": 0.0
+  }
+]

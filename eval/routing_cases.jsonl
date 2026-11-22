@@ -1,0 +1,18 @@
+{"question": "What is the capital of France?", "expected": "DIRECT_ANSWER"}
+{"question": "Hello! How are you?", "expected": "DIRECT_ANSWER"}
+{"question": "Explain what a vector database is in two sentences.", "expected": "DIRECT_ANSWER"}
+{"question": "What is the difference between precision and recall?", "expected": "DIRECT_ANSWER"}
+{"question": "Give a one-line definition of machine learning.", "expected": "DIRECT_ANSWER"}
+{"question": "Thanks, that helps.", "expected": "DIRECT_ANSWER"}
+{"question": "What does Section 4.2 of the uploaded policy say about refunds?", "expected": "RAG_RETRIEVAL"}
+{"question": "According to the policy, how long does express shipping take?", "expected": "RAG_RETRIEVAL"}
+{"question": "Summarize the uploaded document.", "expected": "RAG_RETRIEVAL"}
+{"question": "Who is responsible for deleting marketing data according to the document?", "expected": "RAG_RETRIEVAL"}
+{"question": "Can Final Sale items be returned under our policy?", "expected": "RAG_RETRIEVAL"}
+{"question": "What warranty does the policy give on outdoor equipment?", "expected": "RAG_RETRIEVAL"}
+{"question": "How long are order records retained per the document?", "expected": "RAG_RETRIEVAL"}
+{"question": "Compare the shipping and refund sections of the policy.", "expected": "RAG_RETRIEVAL"}
+{"question": "what about it?", "expected": "CLARIFICATION"}
+{"question": "explain it", "expected": "CLARIFICATION"}
+{"question": "Can Final Sale items be returned?", "expected": "RAG_RETRIEVAL"}
+{"question": "What is the first response target on the Enterprise plan?", "expected": "RAG_RETRIEVAL"}

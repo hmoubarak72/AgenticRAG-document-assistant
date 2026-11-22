@@ -1,0 +1,17 @@
+# Render Blueprint. Set GROQ_API_KEY, QDRANT_URL and QDRANT_API_KEY (Qdrant Cloud)
+# in the Render dashboard; the free disk is ephemeral, so use a hosted Qdrant.
+services:
+  - type: web
+    name: agenticrag-document-assistant
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: QDRANT_URL
+        sync: false
+      - key: QDRANT_API_KEY
+        sync: false
+      - key: LLM_MODEL
+        value: openai/gpt-oss-120b
